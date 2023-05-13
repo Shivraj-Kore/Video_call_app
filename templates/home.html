@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>home</h1>
+
+<div class="dashboard">
+    <h1>Welcome, {{name}}!</h1>
+    <!-- create a "New Meeting" button -->
+    <a href="{% url 'meeting' %}" class="button">New Meeting</a>
+    <a href="{% url 'join_room' %}" class="button">Join Meeting</a>
+    <a href="{% url 'logout' %}" class="button">Logout</a>
+</div>
+
+{% endblock content %}
